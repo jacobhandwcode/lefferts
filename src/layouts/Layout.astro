@@ -25,7 +25,7 @@ const {
   description = '',
   isHome = false,
   disableTransitions = false,
-  keywords = 'Lefferts, Real Estate, Development, Investments, Miami Real Estate, Mendy Chudaitov',
+  keywords = 'Lefferts, Real estate, Real estate development, Investments, Miami real estate, Mendy Chudaitov, Miami real estate development',
   ogImage = '/images/og.png',
   ogType = 'website',
   twitterCard = 'summary_large_image',
@@ -169,6 +169,7 @@ const robotsContent = `${noindex ? 'noindex' : 'index'},${nofollow ? 'nofollow' 
         }
       }
     </script>
+    <meta name="ahrefs-site-verification" content="9608fc89d1b69043656487cd9d1dd2b8b798e4d9088c93492de3c46fdba7e2fe">
   </head>
   <body>
     <Header isHome={isHome} />
@@ -206,9 +207,7 @@ const robotsContent = `${noindex ? 'noindex' : 'index'},${nofollow ? 'nofollow' 
             videos.forEach((video) => {
               if (video.paused) {
                 video.currentTime = 0;
-                video
-                  .play()
-                  .catch((e) => {});
+                video.play().catch((e) => {});
               }
             });
           }, 200);

@@ -975,35 +975,32 @@ function animateFeaturedProperties() {
     },
   });
 
-  const firstProperty = propertyItems[0];
-  if (firstProperty) {
-    const firstImg = firstProperty.querySelector('img');
-    const firstText = firstProperty.querySelector('p');
+  const allImgs = propertiesContainer.querySelectorAll('.property-home img');
+  const allTexts = propertiesContainer.querySelectorAll('.property-home p');
 
-    if (firstImg) {
-      propertiesTl.to(firstImg, {
+  if (allImgs.length) {
+    propertiesTl.to(allImgs, {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      duration: 0.5,
+      ease: 'power1.out',
+      force3D: true,
+    });
+  }
+
+  if (allTexts.length) {
+    propertiesTl.to(
+      allTexts,
+      {
         opacity: 1,
-        scale: 1,
         y: 0,
-        duration: 0.5,
+        duration: 0.4,
         ease: 'power1.out',
         force3D: true,
-      });
-    }
-
-    if (firstText) {
-      propertiesTl.to(
-        firstText,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.4,
-          ease: 'power1.out',
-          force3D: true,
-        },
-        '-=0.2'
-      );
-    }
+      },
+      '-=0.2'
+    );
   }
 
   if (propertyDivider) {
@@ -1016,43 +1013,8 @@ function animateFeaturedProperties() {
         ease: 'power1.out',
         force3D: true,
       },
-      '-=0.2'
+      '-=0.4'
     );
-  }
-
-  const secondProperty = propertyItems[1];
-  if (secondProperty) {
-    const secondImg = secondProperty.querySelector('img');
-    const secondText = secondProperty.querySelector('p');
-
-    if (secondImg) {
-      propertiesTl.to(
-        secondImg,
-        {
-          opacity: 1,
-          scale: 1,
-          y: 0,
-          duration: 0.5,
-          ease: 'power1.out',
-          force3D: true,
-        },
-        '-=0.2'
-      );
-    }
-
-    if (secondText) {
-      propertiesTl.to(
-        secondText,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.4,
-          ease: 'power1.out',
-          force3D: true,
-        },
-        '-=0.2'
-      );
-    }
   }
 
   scrollTriggersCreated.add(triggerKey);
