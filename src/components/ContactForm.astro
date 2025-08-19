@@ -30,18 +30,19 @@
   </form>
 </div>
 
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer
+></script>
 
 <script>
   function initializeContactForm() {
     const contactForm = document.querySelector('.contact-form');
-    
+
     if (!contactForm) {
       return;
     }
 
     contactForm.removeEventListener('submit', handleFormSubmit);
-    
+
     contactForm.addEventListener('submit', handleFormSubmit);
   }
 
@@ -57,9 +58,11 @@
     submitButton.style.opacity = '0.7';
 
     const formData = new FormData(this);
-    
-    const turnstileResponse = document.querySelector('[name="cf-turnstile-response"]')?.value;
-    
+
+    const turnstileResponse = document.querySelector(
+      '[name="cf-turnstile-response"]'
+    )?.value;
+
     if (!turnstileResponse) {
       alert('Please complete the security verification.');
       submitButton.textContent = originalText;
@@ -67,7 +70,7 @@
       submitButton.style.opacity = '1';
       return;
     }
-    
+
     const data = {
       form_type: 'contact',
       firstName: formData.get('firstName'),
@@ -76,7 +79,6 @@
       message: formData.get('message') || '',
       'cf-turnstile-response': turnstileResponse,
     };
-
 
     try {
       const response = await fetch('/form-handler.php', {
@@ -92,8 +94,7 @@
         const textResponse = await response.text();
         console.error('Non-JSON response:', textResponse);
         throw new Error(
-          'Server returned non-JSON response: ' +
-            textResponse.substring(0, 100)
+          'Server returned non-JSON response: ' + textResponse.substring(0, 100)
         );
       }
 
@@ -107,6 +108,11 @@
             <p>${result.message}</p>
           </div>
         `;
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'form_submit',
+          form_type: 'contact',
+        });
       } else {
         const errorMessage = result.error || 'Unknown error occurred';
         alert('Error: ' + errorMessage);
@@ -116,7 +122,6 @@
         submitButton.style.opacity = '1';
       }
     } catch (error) {
-      
       let errorMessage = 'There was an error sending your message. ';
 
       if (error.name === 'TypeError' && error.message.includes('fetch')) {
@@ -177,7 +182,7 @@
     margin: 0;
     font-weight: 600;
   }
-  
+
   .contact-container:has(.success-message) .contact-form {
     display: none !important;
   }

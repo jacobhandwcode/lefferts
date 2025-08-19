@@ -4,6 +4,7 @@ export interface Props {
 }
 const { showNewsletter = true } = Astro.props;
 ---
+
 <footer>
   <div class="top">
     <div class="location">
@@ -47,6 +48,7 @@ const { showNewsletter = true } = Astro.props;
         <div class="socials">
           <div class="icons">
             <a
+              id="linkedin"
               target="_blank"
               href="https://www.linkedin.com/company/lefferts/"
               aria-label="LinkedIn"
@@ -58,6 +60,7 @@ const { showNewsletter = true } = Astro.props;
               </svg>
             </a>
             <a
+              id="instagram"
               target="_blank"
               href="https://www.instagram.com/leffertsinvestments/"
               aria-label="Instagram"
@@ -93,20 +96,19 @@ const { showNewsletter = true } = Astro.props;
 <script>
   function initializeNewsletterForm() {
     const newsletterForm = document.querySelector('.newsletter-form');
-    
+
     if (!newsletterForm) {
       return;
     }
 
     newsletterForm.removeEventListener('submit', handleNewsletterSubmit);
-    
+
     newsletterForm.addEventListener('submit', handleNewsletterSubmit);
   }
 
   async function handleNewsletterSubmit(e) {
     e.preventDefault();
     e.stopPropagation();
-    
 
     const submitButton = this.querySelector('.newsletter-submit');
     const originalText = submitButton.textContent;
@@ -122,7 +124,6 @@ const { showNewsletter = true } = Astro.props;
       email: formData.get('email'),
     };
 
-
     try {
       const response = await fetch('/form-handler.php', {
         method: 'POST',
@@ -132,14 +133,12 @@ const { showNewsletter = true } = Astro.props;
         body: JSON.stringify(data),
       });
 
-
       const contentType = response.headers.get('content-type');
       if (!contentType || !contentType.includes('application/json')) {
         const textResponse = await response.text();
         console.error('Non-JSON response:', textResponse);
         throw new Error(
-          'Server returned non-JSON response: ' +
-            textResponse.substring(0, 100)
+          'Server returned non-JSON response: ' + textResponse.substring(0, 100)
         );
       }
 
@@ -155,7 +154,7 @@ const { showNewsletter = true } = Astro.props;
         `;
       } else {
         const errorMessage = result.error || 'Unknown error occurred';
-        
+
         if (errorMessage.includes('already subscribed')) {
           alert('This email address is already subscribed to our newsletter.');
         } else {
@@ -168,7 +167,7 @@ const { showNewsletter = true } = Astro.props;
       }
     } catch (error) {
       console.error('Newsletter fetch error:', error);
-      
+
       let errorMessage = 'There was an error subscribing to the newsletter. ';
 
       if (error.name === 'TypeError' && error.message.includes('fetch')) {
