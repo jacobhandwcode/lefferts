@@ -216,7 +216,7 @@ const websiteDisplay = property.website
               property.design && (
                 <div class="detail">
                   <h4>Design</h4>
-                  <p>{property.design}</p>
+                  <p set:html={property.design} />
                 </div>
               )
             }
@@ -445,8 +445,7 @@ const websiteDisplay = property.website
     });
   }
 
-  function handleBackgroundImageLoad() {
-  }
+  function handleBackgroundImageLoad() {}
 
   function initializePropertyDetailVideos() {
     const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -532,14 +531,18 @@ const websiteDisplay = property.website
 
         img.onload = function () {
           this.style.opacity = '1';
-          const currentSkeleton = this.closest('.gallery-item').querySelector('.skeleton-placeholder');
+          const currentSkeleton = this.closest('.gallery-item').querySelector(
+            '.skeleton-placeholder'
+          );
           if (currentSkeleton) {
             currentSkeleton.style.display = 'none';
           }
         };
 
         img.onerror = function () {
-          const currentSkeleton = this.closest('.gallery-item').querySelector('.skeleton-placeholder');
+          const currentSkeleton = this.closest('.gallery-item').querySelector(
+            '.skeleton-placeholder'
+          );
           if (currentSkeleton) {
             currentSkeleton.style.display = 'none';
           }
@@ -586,14 +589,18 @@ const websiteDisplay = property.website
 
           img.onload = function () {
             this.style.opacity = '1';
-            const currentSkeleton = this.closest('.glide__slide').querySelector('.skeleton-placeholder');
+            const currentSkeleton = this.closest('.glide__slide').querySelector(
+              '.skeleton-placeholder'
+            );
             if (currentSkeleton) {
               currentSkeleton.style.display = 'none';
             }
           };
 
           img.onerror = function () {
-            const currentSkeleton = this.closest('.glide__slide').querySelector('.skeleton-placeholder');
+            const currentSkeleton = this.closest('.glide__slide').querySelector(
+              '.skeleton-placeholder'
+            );
             if (currentSkeleton) {
               currentSkeleton.style.display = 'none';
             }
@@ -628,7 +635,8 @@ const websiteDisplay = property.website
 
     const modalGallery = document.querySelector('.glide-modal');
     if (modalGallery) {
-      const remainingModalSlides = modalGallery.querySelectorAll('.glide__slide');
+      const remainingModalSlides =
+        modalGallery.querySelectorAll('.glide__slide');
       if (remainingModalSlides.length === 0) {
         const modal = document.getElementById('galleryModal');
         if (modal) {
@@ -640,8 +648,10 @@ const websiteDisplay = property.website
 
   function ensureSkeletonsRemoved() {
     setTimeout(() => {
-      const remainingSkeletons = document.querySelectorAll('.skeleton-placeholder');
-      remainingSkeletons.forEach(skeleton => {
+      const remainingSkeletons = document.querySelectorAll(
+        '.skeleton-placeholder'
+      );
+      remainingSkeletons.forEach((skeleton) => {
         if (skeleton.style.display !== 'none') {
           skeleton.style.display = 'none';
         }
@@ -795,8 +805,7 @@ const websiteDisplay = property.website
         rewind: true,
         animationDuration: 300,
       }).mount();
-    } catch (error) {
-    }
+    } catch (error) {}
   }
 
   function initializePropertyVideos() {
@@ -819,8 +828,7 @@ const websiteDisplay = property.website
         const playPromise = video.play();
         if (playPromise !== undefined) {
           playPromise
-            .then(() => {
-            })
+            .then(() => {})
             .catch((error) => {
               const playOnInteraction = () => {
                 video
@@ -845,14 +853,11 @@ const websiteDisplay = property.website
         video.addEventListener('loadeddata', playVideo, { once: true });
       }
 
-      video.addEventListener('error', (e) => {
-      });
+      video.addEventListener('error', (e) => {});
 
       video.addEventListener('ended', () => {
         video.currentTime = 0;
-        video
-          .play()
-          .catch((e) => {});
+        video.play().catch((e) => {});
       });
     });
   }

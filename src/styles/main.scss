@@ -1779,6 +1779,9 @@ footer {
 
     div {
       margin: 0.8rem 0;
+      &:first-of-type {
+        margin-top: 0;
+      }
     }
   }
 
@@ -3152,4 +3155,10 @@ button.show-articles {
   header .hamburger#hamburger-1.is-active .line:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
+}
+
+.detail p:has(span) {
+  display: flex !important;
+  flex-direction: column;
+  gap: 0.8rem;
 }
