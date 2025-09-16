@@ -10,6 +10,9 @@ export interface Props {
     type?: string;
     design?: string;
     website?: string;
+    email?: string;
+    phone?: string;
+    salesGalleryAddress?: string;
     content: string;
     featuredImage?: string;
     featuredVideo?: string;
@@ -249,6 +252,37 @@ const websiteDisplay = property.website
               )
             }
             {
+              (property.email || property.phone) && (
+                <div class="detail">
+                  <h4>Contact</h4>
+                  <div class="contact-info">
+                    {property.phone && (
+                      <div class="contact-item">
+                        <a href={`tel:${property.phone}`}>
+                          {property.phone}
+                        </a>
+                      </div>
+                    )}
+                    {property.email && (
+                      <div class="contact-item">
+                        <a href={`mailto:${property.email}`}>
+                          {property.email}
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )
+            }
+            {
+              property.salesGalleryAddress && (
+                <div class="detail">
+                  <h4>Sales Gallery</h4>
+                  <p>{property.salesGalleryAddress}</p>
+                </div>
+              )
+            }
+            {
               property.highlights &&
                 Array.isArray(property.highlights) &&
                 property.highlights.length > 0 && (
@@ -423,6 +457,21 @@ const websiteDisplay = property.website
   .mobile-video-container {
     border-radius: 8px;
     overflow: hidden;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .contact-item a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .contact-item a:hover {
+    text-decoration: underline;
   }
 </style>
 
