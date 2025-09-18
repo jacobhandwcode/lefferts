@@ -111,7 +111,7 @@
     "thumbnail": "/images/press/press1.jpg",
     "link": "https://www.bizjournals.com/southflorida/news/2025/05/16/72-park-condo-completed-in-north-beach-photos.html"
   },
-    {
+  {
     "id": 17,
     "title": "Lefferts Unveils its Third Miami Beach Masterpiece: 72 Carlyle, A Bespoke Italian-Designed Residence By Piero Lissoni",
     "publisher": "Haute Residence",
@@ -145,5 +145,26 @@
     "publisher": "The Real Deal",
     "thumbnail": "/images/press/press21.jpg",
     "link": "https://therealdeal.com/miami/2025/09/17/lefferts-kicks-off-sales-for-third-north-beach-condo-project/"
+  },
+  {
+    "id": 22,
+    "title": "72 Carlyle, nuevo proyecto de Lefferts en Miami Beach",
+    "publisher": "Inmobiliare",
+    "thumbnail": "/images/press/press22.jpg",
+    "link": "https://inmobiliare.com/noticias/72-carlyle-nuevo-proyecto-lefferts-miami-beach/"
+  },
+  {
+    "id": 23,
+    "title": "Lefferts Unveils Its Third Miami Beach Masterpiece: 72 Carlyle, Bespoke Residences With Interiors By Piero Lissoni",
+    "publisher": "Luxury Guide USA",
+    "thumbnail": "/images/press/press23.jpg",
+    "link": "https://luxuryguideusa.com/lefferts-unveils-its-third-miami-beach-masterpiece-72-carlyle-bespoke-residences-with-interiors-by-piero-lissoni/"
+  },
+  {
+    "id": 24,
+    "title": "Lefferts Launches 72 Carlyle in Miami Beach’s North Beach",
+    "publisher": "Traded",
+    "thumbnail": "/images/press/press24.webp",
+    "link": "https://traded.co/blog/lefferts-launches-72-carlyle-in-miami-beach-s-north-beach/"
   }
 ]
