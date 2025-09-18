@@ -1804,6 +1804,8 @@ footer {
 }
 
 .press-post {
+  background-position: center;
+  background-size: cover;
   &.press-post-hidden {
     display: none !important;
   }

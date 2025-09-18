@@ -1,114 +1,149 @@
 [
   {
     "id": 1,
-    "title": "72 Park condo completed in North Beach",
-    "publisher": "South Florida Business Journal",
-    "thumbnail": "/images/press/press1.jpg",
-    "link": "https://www.bizjournals.com/southflorida/news/2025/05/16/72-park-condo-completed-in-north-beach-photos.html"
+    "title": "Lefferts to launch short-term rental approved tower '72 park' in Miami Beach",
+    "publisher": "Profile Miami",
+    "thumbnail": "/images/press/press16.webp",
+    "link": "https://profilemiamire.com/miamirealestate/2023/6/28/lefferts-to-launch-72-park-in-miami-beach"
   },
   {
     "id": 2,
-    "title": "Lefferts starts closings for 72 Park condos in North Beach",
-    "publisher": "The Real Deal",
-    "thumbnail": "/images/press/press2.jpg",
-    "link": "https://www.dropbox.com/scl/fi/nr0mwora28d0adst4tewl/TheRealDeal_Online_3.10.25.pdf?rlkey=gjfnv34q7ka690ehdld68t4ql&e=1&st=0m81eiir&dl=0"
-  },
-  {
-    "id": 3,
-    "title": "Developer opens first of four planned condominiums in Miami Beach",
-    "publisher": "CoStart",
-    "thumbnail": "/images/press/press3.avif",
-    "link": "https://www.costar.com/article/2048456857/developer-opens-first-of-four-planned-condominiums-in-miami-beach"
-  },
-  {
-    "id": 4,
-    "title": "22-story Miami Beach condo nears completion",
-    "publisher": "Florida Business Journal",
-    "thumbnail": "/images/press/press4.jpg",
-    "link": "https://www.bizjournals.com/southflorida/news/2025/03/12/72-park-miami-beach-condo-completed-opening.html"
-  },
-  {
-    "id": 5,
-    "title": "72 Park Miami Beach: A Landmark of Luxury and Innovation Completes Construction",
-    "publisher": "Resident",
-    "thumbnail": "/images/press/press5.avif",
-    "link": "https://resident.com/real-estate-news/2025/03/17/72-park-miami-beach-a-landmark-of-luxury-and-innovation-completes-construction"
-  },
-  {
-    "id": 6,
-    "title": "Lefferts launch new luxury 14-story condominium tower, PALMA Miami Beach Residences, offering 126 turnkey residences starting at $650,000",
-    "publisher": "Florida of TMW",
-    "thumbnail": "/images/press/press6.png",
-    "link": "https://floridaoftomorrow.com/post/lefferts-launch-new-luxury-14-story-condominium-tower-palma-miami-beach-residences-offering-126-tu"
-  },
-  {
-    "id": 7,
-    "title": "Lefferts launches sales of non-waterfront North Beach condos, switching from rentals",
-    "publisher": "The Real Deal",
-    "thumbnail": "/images/press/press7.png",
-    "link": "https://therealdeal.com/miami/2024/04/17/lefferts-launches-sales-of-non-waterfront-north-beach-condos/"
-  },
-  {
-    "id": 8,
-    "title": "New condos planned for Miami Beach's north end",
-    "publisher": "AXIOS Miami",
-    "thumbnail": "/images/press/press8.png",
-    "link": "https://www.axios.com/local/miami/2024/03/21/north-beach-new-condo-towers-real-estate?utm_source=newsletter&utm_medium=email&utm_campaign=newsletter_axioslocal_miami&stream=top"
-  },
-  {
-    "id": 9,
-    "title": "19 Miami restaurant openings that have us salivating over 2024",
-    "publisher": "Time Out",
-    "thumbnail": "/images/press/press9.webp",
-    "link": "https://www.timeout.com/miami/restaurants/the-19-miami-restaurant-openings-were-most-excited-for-in-2024"
-  },
-  {
-    "id": 10,
-    "title": "Lefferts has been approved to build 72B, a 20-story luxury condo across the street from 72 Park",
-    "publisher": "Florida of TMW",
-    "thumbnail": "/images/press/press10.webp",
-    "link": "https://www.floridaoftomorrow.com/post/lefferts-has-been-approved-to-build-72b-a-20-story-luxury-condo-across-the-street-from-72-park"
-  },
-  {
-    "id": 11,
-    "title": "Greta Garbo and Ansel Adams’s Former Homes Are for Sale, a “Californication” Party Pad Lists for $38 Million, and More Real Estate News",
-    "publisher": "Architectural Digest",
-    "thumbnail": "/images/press/press11.webp",
-    "link": "https://www.architecturaldigest.com/story/greta-garbo-and-ansel-adamss-former-homes-are-for-sale-real-estate-news"
-  },
-  {
-    "id": 12,
-    "title": "Miami Beach neighborhood draws $150 million block-sized residential towers development",
-    "publisher": "Miami Herald",
-    "thumbnail": "/images/press/press12.webp",
-    "link": "https://www.miamiherald.com/news/business/real-estate-news/article279819514.html"
-  },
-  {
-    "id": 13,
-    "title": "Popular NYC Pizzeria Roberta’s Announces a Permanent Miami Location",
-    "publisher": "Eater Miami",
-    "thumbnail": "/images/press/press13.webp",
-    "link": "https://miami.eater.com/2023/8/29/23849902/robertas-miami-miami-beach-location"
-  },
-  {
-    "id": 14,
-    "title": "Developer proposes 2nd Miami Beach condo on same street",
-    "publisher": "Florida Business Journal",
-    "thumbnail": "/images/press/press14.webp",
-    "link": "https://www.bizjournals.com/southflorida/news/2023/07/20/developer-proposes-20-story-condo-in-miami-beach.html"
-  },
-  {
-    "id": 15,
     "title": "Lefferts Partners with Cervera for New Condominium Tower, 72 Park",
     "publisher": "Real Estate Weekly",
     "thumbnail": "/images/press/press15.webp",
     "link": "https://rew-online.com/lefferts-partners-with-cervera-for-its-new-condominium-tower-72-park/"
   },
   {
+    "id": 3,
+    "title": "Developer proposes 2nd Miami Beach condo on same street",
+    "publisher": "Florida Business Journal",
+    "thumbnail": "/images/press/press14.webp",
+    "link": "https://www.bizjournals.com/southflorida/news/2023/07/20/developer-proposes-20-story-condo-in-miami-beach.html"
+  },
+  {
+    "id": 4,
+    "title": "Popular NYC Pizzeria Roberta's Announces a Permanent Miami Location",
+    "publisher": "Eater Miami",
+    "thumbnail": "/images/press/press13.webp",
+    "link": "https://miami.eater.com/2023/8/29/23849902/robertas-miami-miami-beach-location"
+  },
+  {
+    "id": 5,
+    "title": "Miami Beach neighborhood draws $150 million block-sized residential towers development",
+    "publisher": "Miami Herald",
+    "thumbnail": "/images/press/press12.webp",
+    "link": "https://www.miamiherald.com/news/business/real-estate-news/article279819514.html"
+  },
+  {
+    "id": 6,
+    "title": "Greta Garbo and Ansel Adams's Former Homes Are for Sale, a `Californication` Party Pad Lists for $38 Million, and More Real Estate News",
+    "publisher": "Architectural Digest",
+    "thumbnail": "/images/press/press11.webp",
+    "link": "https://www.architecturaldigest.com/story/greta-garbo-and-ansel-adamss-former-homes-are-for-sale-real-estate-news"
+  },
+  {
+    "id": 7,
+    "title": "Lefferts has been approved to build 72B, a 20-story luxury condo across the street from 72 Park",
+    "publisher": "Florida of TMW",
+    "thumbnail": "/images/press/press10.webp",
+    "link": "https://www.floridaoftomorrow.com/post/lefferts-has-been-approved-to-build-72b-a-20-story-luxury-condo-across-the-street-from-72-park"
+  },
+  {
+    "id": 8,
+    "title": "19 Miami restaurant openings that have us salivating over 2024",
+    "publisher": "Time Out",
+    "thumbnail": "/images/press/press9.webp",
+    "link": "https://www.timeout.com/miami/restaurants/the-19-miami-restaurant-openings-were-most-excited-for-in-2024"
+  },
+  {
+    "id": 9,
+    "title": "New condos planned for Miami Beach's north end",
+    "publisher": "AXIOS Miami",
+    "thumbnail": "/images/press/press8.png",
+    "link": "https://www.axios.com/local/miami/2024/03/21/north-beach-new-condo-towers-real-estate?utm_source=newsletter&utm_medium=email&utm_campaign=newsletter_axioslocal_miami&stream=top"
+  },
+  {
+    "id": 10,
+    "title": "Lefferts launches sales of non-waterfront North Beach condos, switching from rentals",
+    "publisher": "The Real Deal",
+    "thumbnail": "/images/press/press7.png",
+    "link": "https://therealdeal.com/miami/2024/04/17/lefferts-launches-sales-of-non-waterfront-north-beach-condos/"
+  },
+  {
+    "id": 11,
+    "title": "Lefferts launch new luxury 14-story condominium tower, PALMA Miami Beach Residences, offering 126 turnkey residences starting at $650,000",
+    "publisher": "Florida of TMW",
+    "thumbnail": "/images/press/press6.png",
+    "link": "https://floridaoftomorrow.com/post/lefferts-launch-new-luxury-14-story-condominium-tower-palma-miami-beach-residences-offering-126-tu"
+  },
+  {
+    "id": 12,
+    "title": "72 Park Miami Beach: A Landmark of Luxury and Innovation Completes Construction",
+    "publisher": "Resident",
+    "thumbnail": "/images/press/press5.avif",
+    "link": "https://resident.com/real-estate-news/2025/03/17/72-park-miami-beach-a-landmark-of-luxury-and-innovation-completes-construction"
+  },
+  {
+    "id": 13,
+    "title": "22-story Miami Beach condo nears completion",
+    "publisher": "Florida Business Journal",
+    "thumbnail": "/images/press/press4.jpg",
+    "link": "https://www.bizjournals.com/southflorida/news/2025/03/12/72-park-miami-beach-condo-completed-opening.html"
+  },
+  {
+    "id": 14,
+    "title": "Developer opens first of four planned condominiums in Miami Beach",
+    "publisher": "CoStart",
+    "thumbnail": "/images/press/press3.avif",
+    "link": "https://www.costar.com/article/2048456857/developer-opens-first-of-four-planned-condominiums-in-miami-beach"
+  },
+  {
+    "id": 15,
+    "title": "Lefferts starts closings for 72 Park condos in North Beach",
+    "publisher": "The Real Deal",
+    "thumbnail": "/images/press/press2.jpg",
+    "link": "https://www.dropbox.com/scl/fi/nr0mwora28d0adst4tewl/TheRealDeal_Online_3.10.25.pdf?rlkey=gjfnv34q7ka690ehdld68t4ql&e=1&st=0m81eiir&dl=0"
+  },
+  {
     "id": 16,
-    "title": "Lefferts to launch short-term rental approved tower '72 park' in Miami Beach",
-    "publisher": "Profile Miami",
-    "thumbnail": "/images/press/press16.webp",
-    "link": "https://profilemiamire.com/miamirealestate/2023/6/28/lefferts-to-launch-72-park-in-miami-beach"
+    "title": "72 Park condo completed in North Beach",
+    "publisher": "South Florida Business Journal",
+    "thumbnail": "/images/press/press1.jpg",
+    "link": "https://www.bizjournals.com/southflorida/news/2025/05/16/72-park-condo-completed-in-north-beach-photos.html"
+  },
+    {
+    "id": 17,
+    "title": "Lefferts Unveils its Third Miami Beach Masterpiece: 72 Carlyle, A Bespoke Italian-Designed Residence By Piero Lissoni",
+    "publisher": "Haute Residence",
+    "thumbnail": "/images/press/press17.jpg",
+    "link": "https://www.hauteresidence.com/lefferts-unveils-its-third-miami-beach-masterpiece-72-carlyle-a-bespoke-italian-designed-residence-by-piero-lissoni/"
+  },
+  {
+    "id": 18,
+    "title": "Lefferts presenta su tercera obra maestra en Miami Beach: 72 Carlyle, con interiores diseñados a medida por Piero Lissoni",
+    "publisher": "Norte en Linea",
+    "thumbnail": "/images/press/press18.jpg",
+    "link": "https://norteenlinea.com/lefferts-presenta-su-tercera-obra-maestra-en-miami-beach-72-carlyle-con-interiores-disenados-a-medida-por-piero-lissoni/"
+  },
+  {
+    "id": 19,
+    "title": "Italian Visionary Piero Lissoni Designed the Interiors of These Miami Beach Condos",
+    "publisher": "Robb Report",
+    "thumbnail": "/images/press/press19.webp",
+    "link": "https://robbreport.com/shelter/new-construction/72-carlyle-miami-beach-1237029899/"
+  },
+  {
+    "id": 20,
+    "title": "Developer launches sales of North Beach condo, starting at $1.8M",
+    "publisher": "South Florida Business Journal",
+    "thumbnail": "/images/press/press20.jpg",
+    "link": "https://www.bizjournals.com/southflorida/news/2025/09/17/developer-launches-sales-of-north-beach-condo.html"
+  },
+  {
+    "id": 21,
+    "title": "Lefferts kicks off sales for 72 Carlyle, its third North Beach condo project",
+    "publisher": "The Real Deal",
+    "thumbnail": "/images/press/press21.jpg",
+    "link": "https://therealdeal.com/miami/2025/09/17/lefferts-kicks-off-sales-for-third-north-beach-condo-project/"
   }
 ]

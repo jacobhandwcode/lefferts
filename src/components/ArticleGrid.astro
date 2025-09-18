@@ -13,18 +13,18 @@ const { articles } = Astro.props;
 ---
 
 <div class="all-buildings">
-  {articles.map((article, index) => {
+  {[...articles].reverse().map((article, index) => {
     const isHidden = index >= 8;
     return (
       <>
         <a 
+          style={`background-image: url('${article.thumbnail}')`}
           target="_blank" 
           href={article.link} 
           class={`container building-wrapper press-post ${isHidden ? 'press-post-hidden' : ''}`}
         >
           <div class="content building">
             <div class="content-overlay"></div>
-            <img class="content-image" src={article.thumbnail} alt={article.title} />
             <div class="content-details fadeIn-left">
               <p>{article.publisher}</p>
               <h3>{article.title}</h3>
