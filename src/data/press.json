@@ -167,11 +167,25 @@
     "thumbnail": "/images/press/press24.webp",
     "link": "https://traded.co/blog/lefferts-launches-72-carlyle-in-miami-beach-s-north-beach/"
   },
-    {
+  {
     "id": 25,
     "title": "Meet the 2025 Structures Awards honorees",
     "publisher": "South Florida Business Journal",
     "thumbnail": "/images/press/press25.jpg",
     "link": "https://www.bizjournals.com/southflorida/news/2025/09/18/meet-the-2025-structures-awards-honorees.html"
+  },
+  {
+    "id": 26,
+    "title": "Lefferts presenta 72 Carlyle, torre residencial de lujo con interiores diseñados por Piero Lissoni en Miami Beach",
+    "publisher": "Mercado",
+    "thumbnail": "/images/press/press26.jpg",
+    "link": "https://mercado.com.ar/ladrillos-y-proyectos/lefferts-presenta-72-carlyle-torre-residencial-de-lujo-disenada-por-piero-lissoni-en-miami-beach/"
+  },
+  {
+    "id": 27,
+    "title": "’72 Carlyle’ to Comprise 134 Luxury Homes at 7130 Carlyle Ave. and 600 72nd Street, Miami Beach, Florida",
+    "publisher": "Florida YIMBY",
+    "thumbnail": "/images/press/press27.png",
+    "link": "https://floridayimby.com/2025/09/72-carlyle-to-comprise-134-luxury-homes-at-7130-carlyle-ave-and-600-72nd-street-miami-beach-florida.html"
   }
 ]
