@@ -65,9 +65,10 @@
       "phone": "+1 305.399.2222",
       "salesGalleryAddress": "580 72nd Street, Retail B.1 Miami Beach FL 33141",
       "content": "<p>72 Carlyle embodies the essence of Miami Beach—where natural beauty meets a sophisticated coastal lifestyle. Designed by Italian master Piero Lissoni, the waterfront residences sit just moments from the ocean and Intracoastal, with easy access to Bal Harbour, Surfside, and the Faena District.</p><p>Framing extraordinary views and paired with curated indoor and outdoor amenities, 72 Carlyle brings la dolce vita to Miami Beach.</p>",
-      "featuredVideo": "/videos/72-carlyle.mp4",
-      "featuredImage": "/images/portfolio/72-carlyle-featured.png",
+      "featuredVideo": "",
+      "featuredImage": "/images/portfolio/72-carlyle-featured1.webp",
       "gallery": [
+        "/images/portfolio/72-carlyle-featured.webp",
         "/images/portfolio/72-carlyle-1.jpg",
         "/images/portfolio/72-carlyle-2.jpg",
         "/images/portfolio/72-carlyle-3.jpg",
