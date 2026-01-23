@@ -1,16 +1,621 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ArticleGrid from '../components/ArticleGrid.astro';
 import press from '../data/press.json';
+
+// Get unique categories from press data
+const categories = [...new Set(press.map(article => article.category || 'Uncategorized'))].sort();
 ---
 
 <Layout
   title="Press | Lefferts"
   description="Access Lefferts' latest news, press releases, and media resources. Find information on our innovative real estate developments in NYC and Miami."
 >
-  <ArticleGrid articles={press} />
+
+  <section class="press-container">
+    <!-- Category Filter -->
+    <div class="press-filter-wrapper">
+      <div class="press-filter">
+        <button class="filter-btn active" data-category="all">All</button>
+        {categories.map(category => (
+          <button class="filter-btn" data-category={category}>{category}</button>
+        ))}
+      </div>
+      <div class="press-count">
+        <span class="count-number">{press.length}</span> Articles
+      </div>
+    </div>
+
+    <!-- Featured Article (Latest) -->
+    {(() => {
+      const featured = [...press].reverse()[0];
+      return (
+        <a href={featured.link} target="_blank" class="featured-article" data-category={featured.category || 'Uncategorized'}>
+          <div class="featured-image" style={`background-image: url('${featured.thumbnail}')`}>
+            <div class="featured-overlay"></div>
+          </div>
+          <div class="featured-content">
+            <span class="featured-tag">Latest</span>
+            <span class="featured-category">{featured.category || 'News'}</span>
+            <h2 class="featured-title">{featured.title}</h2>
+            <p class="featured-publisher">{featured.publisher}</p>
+            <span class="featured-cta">Read Article →</span>
+          </div>
+        </a>
+      );
+    })()}
+
+    <!-- Article Grid -->
+    <div class="press-grid">
+      {[...press].reverse().slice(1).map((article, index) => (
+        <a 
+          href={article.link} 
+          target="_blank" 
+          class={`press-card ${index < 8 ? '' : 'press-card-hidden'}`}
+          data-category={article.category || 'Uncategorized'}
+        >
+          <div class="press-card-image" style={`background-image: url('${article.thumbnail}')`}>
+            <div class="press-card-overlay">
+              <span class="press-card-cta">Read Article</span>
+            </div>
+          </div>
+          <div class="press-card-content">
+            <span class="press-card-category">{article.category || 'News'}</span>
+            <h3 class="press-card-title">{article.title}</h3>
+            <p class="press-card-publisher">{article.publisher}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <!-- Load More Button -->
+    <button class="show-articles" id="loadMoreBtn">
+      <span>Load More Articles</span>
+    </button>
+
+    <!-- No Results Message -->
+    <div class="press-no-results" style="display: none;">
+      <p>No articles found in this category.</p>
+      <button class="filter-btn" data-category="all">View All Articles</button>
+    </div>
+  </section>
+
+  <!-- Press Inquiries -->
   <div class="inquiries">
     <p>Press Inquiries</p>
     <a href="mailto:press@lefferts.com">press@lefferts.com</a>
   </div>
 </Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const pressCards = document.querySelectorAll('.press-card');
+    const featuredArticle = document.querySelector('.featured-article');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const noResults = document.querySelector('.press-no-results');
+    const countNumber = document.querySelector('.count-number');
+    
+    let visibleCount = 8;
+    let currentCategory = 'all';
+
+    // Filter functionality
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active state
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        currentCategory = btn.dataset.category;
+        visibleCount = 8;
+        
+        filterArticles();
+      });
+    });
+
+    function filterArticles() {
+      let visibleArticles = 0;
+      let totalInCategory = 0;
+
+      // Handle featured article
+      if (featuredArticle) {
+        const featuredCategory = featuredArticle.dataset.category;
+        if (currentCategory === 'all' || featuredCategory === currentCategory) {
+          featuredArticle.style.display = 'flex';
+          totalInCategory++;
+          visibleArticles++;
+        } else {
+          featuredArticle.style.display = 'none';
+        }
+      }
+
+      // Handle grid articles
+      pressCards.forEach((card, index) => {
+        const cardCategory = card.dataset.category;
+        const matchesFilter = currentCategory === 'all' || cardCategory === currentCategory;
+        
+        if (matchesFilter) {
+          totalInCategory++;
+          if (visibleArticles < visibleCount + 1) { // +1 for featured
+            card.style.display = 'flex';
+            card.classList.remove('press-card-hidden');
+            visibleArticles++;
+          } else {
+            card.style.display = 'none';
+            card.classList.add('press-card-hidden');
+          }
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update count
+      countNumber.textContent = totalInCategory;
+
+      // Show/hide load more button
+      if (loadMoreBtn) {
+        loadMoreBtn.style.display = visibleArticles < totalInCategory ? 'flex' : 'none';
+      }
+
+      // Show/hide no results message
+      if (noResults) {
+        noResults.style.display = totalInCategory === 0 ? 'flex' : 'none';
+      }
+    }
+
+    // Load more functionality
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', () => {
+        visibleCount += 8;
+        filterArticles();
+      });
+    }
+
+    // Initial filter
+    filterArticles();
+  });
+</script>
+
+<style>
+  /* Press Hero */
+  .press-hero {
+    padding: 120px 50px 60px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-border, #e5e5e5);
+  }
+
+  .press-hero-content h1 {
+    font-size: 48px;
+    font-weight: 100;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .press-subtitle {
+    font-family: neue-l, sans-serif;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 1px;
+  }
+
+  /* Press Container */
+  .press-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+
+  /* Filter */
+  .press-filter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .press-filter {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: 10px 20px;
+    font-family: hudson, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .filter-btn:hover,
+  .filter-btn.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+  }
+
+  .press-count {
+    font-family: hudson, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #999;
+  }
+
+  .count-number {
+    font-size: 24px;
+    color: #000;
+    margin-right: 5px;
+  }
+
+  /* Featured Article */
+  .featured-article {
+    display: flex;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: inherit;
+    background: #f9f9f9;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+
+  .featured-article:hover {
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+  }
+
+  .featured-article:hover .featured-image {
+    transform: scale(1.05);
+  }
+
+  .featured-image {
+    flex: 0 0 60%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.6s ease;
+  }
+
+  .featured-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+  }
+
+  .featured-content {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .featured-tag {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    width: fit-content;
+  }
+
+  .featured-category {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 20px;
+  }
+
+  .featured-title {
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .featured-publisher {
+    font-family: neue-l, sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .featured-cta {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #000;
+    transition: letter-spacing 0.3s ease;
+  }
+
+  .featured-article:hover .featured-cta {
+    letter-spacing: 3px;
+  }
+
+  /* Press Grid */
+  .press-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  /* Press Card */
+  .press-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+  }
+
+  .press-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .press-card:hover .press-card-overlay {
+    opacity: 1;
+  }
+
+  .press-card:hover .press-card-image {
+    transform: scale(1.02);
+  }
+
+  .press-card-image {
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+  }
+
+  .press-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .press-card-cta {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border: 1px solid rgba(255,255,255,0.5);
+  }
+
+  .press-card-content {
+    padding: 20px 0;
+  }
+
+  .press-card-category {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .press-card-title {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .press-card-publisher {
+    font-family: neue-l, sans-serif;
+    font-size: 13px;
+    color: #666;
+  }
+
+  .press-card-hidden {
+    display: none !important;
+  }
+
+  /* Load More Button */
+  .press-load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 15px 40px;
+    font-family: hudson, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .press-load-more:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  /* No Results */
+  .press-no-results {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .press-no-results p {
+    font-family: neue-l, sans-serif;
+    font-size: 16px;
+    color: #666;
+  }
+
+  /* Press Inquiries */
+  .press-inquiries {
+    border-top: 1px solid var(--color-border, #e5e5e5);
+    padding: 80px 50px;
+    text-align: center;
+    background: #f9f9f9;
+  }
+
+  .inquiries-content h3 {
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .inquiries-content p {
+    font-family: neue-l, sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+  }
+
+  .inquiries-email {
+    display: inline-block;
+    padding: 12px 30px;
+    font-family: hudson, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+  }
+
+  .inquiries-email:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .press-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .press-hero {
+      padding: 80px 30px 50px;
+    }
+
+    .press-hero-content h1 {
+      font-size: 36px;
+      letter-spacing: 5px;
+    }
+
+    .press-container {
+      padding: 30px;
+    }
+
+    .featured-article {
+      flex-direction: column;
+    }
+
+    .featured-image {
+      flex: none;
+      min-height: 350px;
+    }
+
+    .featured-content {
+      padding: 30px;
+    }
+
+    .featured-title {
+      font-size: 22px;
+    }
+
+    .press-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .press-hero {
+      padding: 60px 20px 40px;
+    }
+
+    .press-hero-content h1 {
+      font-size: 28px;
+      letter-spacing: 3px;
+    }
+
+    .press-container {
+      padding: 20px;
+    }
+
+    .press-filter-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .press-filter {
+      width: 100%;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding-bottom: 10px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .filter-btn {
+      flex-shrink: 0;
+      padding: 8px 16px;
+      font-size: 11px;
+    }
+
+    .featured-image {
+      min-height: 250px;
+    }
+
+    .featured-content {
+      padding: 25px 20px;
+    }
+
+    .featured-title {
+      font-size: 18px;
+    }
+
+    .press-grid {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+
+    .press-card-image {
+      height: 220px;
+    }
+
+    .press-inquiries {
+      padding: 50px 20px;
+    }
+  }
+</style>

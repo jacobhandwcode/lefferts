@@ -4,258 +4,335 @@
     "title": "Lefferts to launch short-term rental approved tower '72 park' in Miami Beach",
     "publisher": "Profile Miami",
     "thumbnail": "/images/press/press16.webp",
-    "link": "https://profilemiamire.com/miamirealestate/2023/6/28/lefferts-to-launch-72-park-in-miami-beach"
+    "link": "https://profilemiamire.com/miamirealestate/2023/6/28/lefferts-to-launch-72-park-in-miami-beach",
+    "category": "Development"
   },
   {
     "id": 2,
     "title": "Lefferts Partners with Cervera for New Condominium Tower, 72 Park",
     "publisher": "Real Estate Weekly",
     "thumbnail": "/images/press/press15.webp",
-    "link": "https://rew-online.com/lefferts-partners-with-cervera-for-its-new-condominium-tower-72-park/"
+    "link": "https://rew-online.com/lefferts-partners-with-cervera-for-its-new-condominium-tower-72-park/",
+    "category": "Partnership"
   },
   {
     "id": 3,
     "title": "Developer proposes 2nd Miami Beach condo on same street",
     "publisher": "Florida Business Journal",
     "thumbnail": "/images/press/press14.webp",
-    "link": "https://www.bizjournals.com/southflorida/news/2023/07/20/developer-proposes-20-story-condo-in-miami-beach.html"
+    "link": "https://www.bizjournals.com/southflorida/news/2023/07/20/developer-proposes-20-story-condo-in-miami-beach.html",
+    "category": "Development"
   },
   {
     "id": 4,
     "title": "Popular NYC Pizzeria Roberta's Announces a Permanent Miami Location",
     "publisher": "Eater Miami",
     "thumbnail": "/images/press/press13.webp",
-    "link": "https://miami.eater.com/2023/8/29/23849902/robertas-miami-miami-beach-location"
+    "link": "https://miami.eater.com/2023/8/29/23849902/robertas-miami-miami-beach-location",
+    "category": "Lifestyle"
   },
   {
     "id": 5,
     "title": "Miami Beach neighborhood draws $150 million block-sized residential towers development",
     "publisher": "Miami Herald",
     "thumbnail": "/images/press/press12.webp",
-    "link": "https://www.miamiherald.com/news/business/real-estate-news/article279819514.html"
+    "link": "https://www.miamiherald.com/news/business/real-estate-news/article279819514.html",
+    "category": "Development"
   },
   {
     "id": 6,
     "title": "Greta Garbo and Ansel Adams's Former Homes Are for Sale, a `Californication` Party Pad Lists for $38 Million, and More Real Estate News",
     "publisher": "Architectural Digest",
     "thumbnail": "/images/press/press11.webp",
-    "link": "https://www.architecturaldigest.com/story/greta-garbo-and-ansel-adamss-former-homes-are-for-sale-real-estate-news"
+    "link": "https://www.architecturaldigest.com/story/greta-garbo-and-ansel-adamss-former-homes-are-for-sale-real-estate-news",
+    "category": "Feature"
   },
   {
     "id": 7,
     "title": "Lefferts has been approved to build 72B, a 20-story luxury condo across the street from 72 Park",
     "publisher": "Florida of TMW",
     "thumbnail": "/images/press/press10.webp",
-    "link": "https://www.floridaoftomorrow.com/post/lefferts-has-been-approved-to-build-72b-a-20-story-luxury-condo-across-the-street-from-72-park"
+    "link": "https://www.floridaoftomorrow.com/post/lefferts-has-been-approved-to-build-72b-a-20-story-luxury-condo-across-the-street-from-72-park",
+    "category": "Development"
   },
   {
     "id": 8,
     "title": "19 Miami restaurant openings that have us salivating over 2024",
     "publisher": "Time Out",
     "thumbnail": "/images/press/press9.webp",
-    "link": "https://www.timeout.com/miami/restaurants/the-19-miami-restaurant-openings-were-most-excited-for-in-2024"
+    "link": "https://www.timeout.com/miami/restaurants/the-19-miami-restaurant-openings-were-most-excited-for-in-2024",
+    "category": "Lifestyle"
   },
   {
     "id": 9,
     "title": "New condos planned for Miami Beach's north end",
     "publisher": "AXIOS Miami",
     "thumbnail": "/images/press/press8.png",
-    "link": "https://www.axios.com/local/miami/2024/03/21/north-beach-new-condo-towers-real-estate?utm_source=newsletter&utm_medium=email&utm_campaign=newsletter_axioslocal_miami&stream=top"
+    "link": "https://www.axios.com/local/miami/2024/03/21/north-beach-new-condo-towers-real-estate?utm_source=newsletter&utm_medium=email&utm_campaign=newsletter_axioslocal_miami&stream=top",
+    "category": "Development"
   },
   {
     "id": 10,
     "title": "Lefferts launches sales of non-waterfront North Beach condos, switching from rentals",
     "publisher": "The Real Deal",
     "thumbnail": "/images/press/press7.png",
-    "link": "https://therealdeal.com/miami/2024/04/17/lefferts-launches-sales-of-non-waterfront-north-beach-condos/"
+    "link": "https://therealdeal.com/miami/2024/04/17/lefferts-launches-sales-of-non-waterfront-north-beach-condos/",
+    "category": "Sales"
   },
   {
     "id": 11,
     "title": "Lefferts launch new luxury 14-story condominium tower, PALMA Miami Beach Residences, offering 126 turnkey residences starting at $650,000",
     "publisher": "Florida of TMW",
     "thumbnail": "/images/press/press6.png",
-    "link": "https://floridaoftomorrow.com/post/lefferts-launch-new-luxury-14-story-condominium-tower-palma-miami-beach-residences-offering-126-tu"
+    "link": "https://floridaoftomorrow.com/post/lefferts-launch-new-luxury-14-story-condominium-tower-palma-miami-beach-residences-offering-126-tu",
+    "category": "Development"
   },
   {
     "id": 12,
     "title": "72 Park Miami Beach: A Landmark of Luxury and Innovation Completes Construction",
     "publisher": "Resident",
     "thumbnail": "/images/press/press5.avif",
-    "link": "https://resident.com/real-estate-news/2025/03/17/72-park-miami-beach-a-landmark-of-luxury-and-innovation-completes-construction"
+    "link": "https://resident.com/real-estate-news/2025/03/17/72-park-miami-beach-a-landmark-of-luxury-and-innovation-completes-construction",
+    "category": "Milestone"
   },
   {
     "id": 13,
     "title": "22-story Miami Beach condo nears completion",
     "publisher": "Florida Business Journal",
     "thumbnail": "/images/press/press4.jpg",
-    "link": "https://www.bizjournals.com/southflorida/news/2025/03/12/72-park-miami-beach-condo-completed-opening.html"
+    "link": "https://www.bizjournals.com/southflorida/news/2025/03/12/72-park-miami-beach-condo-completed-opening.html",
+    "category": "Milestone"
   },
   {
     "id": 14,
     "title": "Developer opens first of four planned condominiums in Miami Beach",
     "publisher": "CoStart",
     "thumbnail": "/images/press/press3.avif",
-    "link": "https://www.costar.com/article/2048456857/developer-opens-first-of-four-planned-condominiums-in-miami-beach"
+    "link": "https://www.costar.com/article/2048456857/developer-opens-first-of-four-planned-condominiums-in-miami-beach",
+    "category": "Milestone"
   },
   {
     "id": 15,
     "title": "Lefferts starts closings for 72 Park condos in North Beach",
     "publisher": "The Real Deal",
     "thumbnail": "/images/press/press2.jpg",
-    "link": "https://www.dropbox.com/scl/fi/nr0mwora28d0adst4tewl/TheRealDeal_Online_3.10.25.pdf?rlkey=gjfnv34q7ka690ehdld68t4ql&e=1&st=0m81eiir&dl=0"
+    "link": "https://www.dropbox.com/scl/fi/nr0mwora28d0adst4tewl/TheRealDeal_Online_3.10.25.pdf?rlkey=gjfnv34q7ka690ehdld68t4ql&e=1&st=0m81eiir&dl=0",
+    "category": "Sales"
   },
   {
     "id": 16,
     "title": "72 Park condo completed in North Beach",
     "publisher": "South Florida Business Journal",
     "thumbnail": "/images/press/press1.jpg",
-    "link": "https://www.bizjournals.com/southflorida/news/2025/05/16/72-park-condo-completed-in-north-beach-photos.html"
+    "link": "https://www.bizjournals.com/southflorida/news/2025/05/16/72-park-condo-completed-in-north-beach-photos.html",
+    "category": "Milestone"
   },
   {
     "id": 17,
     "title": "Lefferts Unveils its Third Miami Beach Masterpiece: 72 Carlyle, A Bespoke Italian-Designed Residence By Piero Lissoni",
     "publisher": "Haute Residence",
     "thumbnail": "/images/press/press17.jpg",
-    "link": "https://www.hauteresidence.com/lefferts-unveils-its-third-miami-beach-masterpiece-72-carlyle-a-bespoke-italian-designed-residence-by-piero-lissoni/"
+    "link": "https://www.hauteresidence.com/lefferts-unveils-its-third-miami-beach-masterpiece-72-carlyle-a-bespoke-italian-designed-residence-by-piero-lissoni/",
+    "category": "Design"
   },
   {
     "id": 18,
     "title": "Lefferts presenta su tercera obra maestra en Miami Beach: 72 Carlyle, con interiores diseñados a medida por Piero Lissoni",
     "publisher": "Norte en Linea",
     "thumbnail": "/images/press/press18.jpg",
-    "link": "https://norteenlinea.com/lefferts-presenta-su-tercera-obra-maestra-en-miami-beach-72-carlyle-con-interiores-disenados-a-medida-por-piero-lissoni/"
+    "link": "https://norteenlinea.com/lefferts-presenta-su-tercera-obra-maestra-en-miami-beach-72-carlyle-con-interiores-disenados-a-medida-por-piero-lissoni/",
+    "category": "Design"
   },
   {
     "id": 19,
     "title": "Italian Visionary Piero Lissoni Designed the Interiors of These Miami Beach Condos",
     "publisher": "Robb Report",
     "thumbnail": "/images/press/press19.webp",
-    "link": "https://robbreport.com/shelter/new-construction/72-carlyle-miami-beach-1237029899/"
+    "link": "https://robbreport.com/shelter/new-construction/72-carlyle-miami-beach-1237029899/",
+    "category": "Design"
   },
   {
     "id": 20,
     "title": "Developer launches sales of North Beach condo, starting at $1.8M",
     "publisher": "South Florida Business Journal",
     "thumbnail": "/images/press/press20.jpg",
-    "link": "https://www.bizjournals.com/southflorida/news/2025/09/17/developer-launches-sales-of-north-beach-condo.html"
+    "link": "https://www.bizjournals.com/southflorida/news/2025/09/17/developer-launches-sales-of-north-beach-condo.html",
+    "category": "Sales"
   },
   {
     "id": 21,
     "title": "Lefferts kicks off sales for 72 Carlyle, its third North Beach condo project",
     "publisher": "The Real Deal",
     "thumbnail": "/images/press/press21.jpg",
-    "link": "https://therealdeal.com/miami/2025/09/17/lefferts-kicks-off-sales-for-third-north-beach-condo-project/"
+    "link": "https://therealdeal.com/miami/2025/09/17/lefferts-kicks-off-sales-for-third-north-beach-condo-project/",
+    "category": "Sales"
   },
   {
     "id": 22,
     "title": "72 Carlyle, nuevo proyecto de Lefferts en Miami Beach",
     "publisher": "Inmobiliare",
     "thumbnail": "/images/press/press22.jpg",
-    "link": "https://inmobiliare.com/noticias/72-carlyle-nuevo-proyecto-lefferts-miami-beach/"
+    "link": "https://inmobiliare.com/noticias/72-carlyle-nuevo-proyecto-lefferts-miami-beach/",
+    "category": "Development"
   },
   {
     "id": 23,
     "title": "Lefferts Unveils Its Third Miami Beach Masterpiece: 72 Carlyle, Bespoke Residences With Interiors By Piero Lissoni",
     "publisher": "Luxury Guide USA",
     "thumbnail": "/images/press/press23.jpg",
-    "link": "https://luxuryguideusa.com/lefferts-unveils-its-third-miami-beach-masterpiece-72-carlyle-bespoke-residences-with-interiors-by-piero-lissoni/"
+    "link": "https://luxuryguideusa.com/lefferts-unveils-its-third-miami-beach-masterpiece-72-carlyle-bespoke-residences-with-interiors-by-piero-lissoni/",
+    "category": "Design"
   },
   {
     "id": 24,
-    "title": "Lefferts Launches 72 Carlyle in Miami Beach’s North Beach",
+    "title": "Lefferts Launches 72 Carlyle in Miami Beach's North Beach",
     "publisher": "Traded",
     "thumbnail": "/images/press/press24.webp",
-    "link": "https://traded.co/blog/lefferts-launches-72-carlyle-in-miami-beach-s-north-beach/"
+    "link": "https://traded.co/blog/lefferts-launches-72-carlyle-in-miami-beach-s-north-beach/",
+    "category": "Development"
   },
   {
     "id": 25,
     "title": "Meet the 2025 Structures Awards honorees",
     "publisher": "South Florida Business Journal",
     "thumbnail": "/images/press/press25.jpg",
-    "link": "https://www.bizjournals.com/southflorida/news/2025/09/18/meet-the-2025-structures-awards-honorees.html"
+    "link": "https://www.bizjournals.com/southflorida/news/2025/09/18/meet-the-2025-structures-awards-honorees.html",
+    "category": "Awards"
   },
   {
     "id": 26,
     "title": "Lefferts presenta 72 Carlyle, torre residencial de lujo con interiores diseñados por Piero Lissoni en Miami Beach",
     "publisher": "Mercado",
     "thumbnail": "/images/press/press26.jpg",
-    "link": "https://mercado.com.ar/ladrillos-y-proyectos/lefferts-presenta-72-carlyle-torre-residencial-de-lujo-disenada-por-piero-lissoni-en-miami-beach/"
+    "link": "https://mercado.com.ar/ladrillos-y-proyectos/lefferts-presenta-72-carlyle-torre-residencial-de-lujo-disenada-por-piero-lissoni-en-miami-beach/",
+    "category": "Design"
   },
   {
     "id": 27,
-    "title": "’72 Carlyle’ to Comprise 134 Luxury Homes at 7130 Carlyle Ave. and 600 72nd Street, Miami Beach, Florida",
+    "title": "'72 Carlyle' to Comprise 134 Luxury Homes at 7130 Carlyle Ave. and 600 72nd Street, Miami Beach, Florida",
     "publisher": "Florida YIMBY",
     "thumbnail": "/images/press/press27.png",
-    "link": "https://floridayimby.com/2025/09/72-carlyle-to-comprise-134-luxury-homes-at-7130-carlyle-ave-and-600-72nd-street-miami-beach-florida.html"
+    "link": "https://floridayimby.com/2025/09/72-carlyle-to-comprise-134-luxury-homes-at-7130-carlyle-ave-and-600-72nd-street-miami-beach-florida.html",
+    "category": "Development"
   },
   {
     "id": 28,
     "title": "Story Spaces",
     "publisher": "Lifestyles South Florida",
     "thumbnail": "/images/press/press28.webp",
-    "link": "https://www.calameo.com/read/003786447922ff5829006"
+    "link": "https://www.calameo.com/read/003786447922ff5829006",
+    "category": "Feature"
   },
   {
     "id": 29,
     "title": "New 72 Park condo kicks off plan to revitalize North Beach",
     "publisher": "Miami Today",
     "thumbnail": "/images/press/press29.jpg",
-    "link": "https://www.dropbox.com/scl/fi/k4047j8t9n15yo76wicio/MiamiToday_11.12.25_Print.pdf?rlkey=dsry06fxyhd6awcdhx4p6ceu1&e=1&st=f1gajum7&dl=0"
+    "link": "https://www.dropbox.com/scl/fi/k4047j8t9n15yo76wicio/MiamiToday_11.12.25_Print.pdf?rlkey=dsry06fxyhd6awcdhx4p6ceu1&e=1&st=f1gajum7&dl=0",
+    "category": "Feature"
   },
   {
     "id": 30,
     "title": "Art Miami: Meet the Artist at 72 Carlyle — Featuring Artie Sandstone",
     "publisher": "The Miami Times",
     "thumbnail": "/images/press/press30.webp",
-    "link": "https://www.miamitimesonline.com/local-events/?_evDiscoveryPath=/event/3366666-art-miami-meet-the-artist-at-72-carlyle-featuring-artie-sandstone"
+    "link": "https://www.miamitimesonline.com/local-events/?_evDiscoveryPath=/event/3366666-art-miami-meet-the-artist-at-72-carlyle-featuring-artie-sandstone",
+    "category": "Events"
   },
   {
     "id": 31,
     "title": "Best Real Estate Development Group",
     "publisher": "Miami Dade Favorites (Miami Herald)",
     "thumbnail": "/images/press/press31.webp",
-    "link": "https://www.miamidadefavorites.com/2025-magazine.html"
+    "link": "https://www.miamidadefavorites.com/2025-magazine.html",
+    "category": "Awards"
   },
   {
     "id": 32,
     "title": "Palma Miami Beach Ground Breaking",
     "publisher": "World Red Eye",
     "thumbnail": "/images/press/press32.jpg",
-    "link": "https://worldredeye.com/2025/12/palma-miami-beach-ground-breaking/"
+    "link": "https://worldredeye.com/2025/12/palma-miami-beach-ground-breaking/",
+    "category": "Events"
   },
   {
     "id": 33,
     "title": "North Beach tower with half the condos pre-sold breaks ground",
     "publisher": "South Florida Business Journal",
     "thumbnail": "/images/press/press33.jpg",
-    "link": "https://www.bizjournals.com/southflorida/news/2025/12/19/lefferts-breaks-ground-on-north-beach-condo.html"
+    "link": "https://www.bizjournals.com/southflorida/news/2025/12/19/lefferts-breaks-ground-on-north-beach-condo.html",
+    "category": "Milestone"
   },
   {
     "id": 34,
     "title": "Lefferts Advances North Beach Vision With PALMA Miami Beach Residences",
     "publisher": "Haute Residence",
     "thumbnail": "/images/press/press34.jpg",
-    "link": "https://www.hauteresidence.com/lefferts-advances-north-beach-vision-with-palma-miami-beach-residences/"
+    "link": "https://www.hauteresidence.com/lefferts-advances-north-beach-vision-with-palma-miami-beach-residences/",
+    "category": "Development"
   },
   {
     "id": 35,
     "title": "Ground Breaks on 14-Story PALMA Miami Beach Residences at 600 71st Street in North Beach",
     "publisher": "Florida YIMBY",
     "thumbnail": "/images/press/press35.jpg",
-    "link": "https://floridayimby.com/2025/12/ground-breaks-on-14-story-palma-miami-beach-residences-at-600-71st-street-in-north-beach.html"
+    "link": "https://floridayimby.com/2025/12/ground-breaks-on-14-story-palma-miami-beach-residences-at-600-71st-street-in-north-beach.html",
+    "category": "Milestone"
   },
-    {
+  {
     "id": 36,
     "title": "Lefferts starts work on second Miami Beach condominium",
     "publisher": "CoStar",
     "thumbnail": "/images/press/press36.jpg",
-    "link": "https://www.costar.com/article/1159813851/lefferts-starts-work-on-second-miami-beach-condominium"
+    "link": "https://www.costar.com/article/1159813851/lefferts-starts-work-on-second-miami-beach-condominium",
+    "category": "Development"
   },
-      {
+  {
     "id": 37,
     "title": "Cold Plunge Pools Are the New Deal Breaker in Luxury Condo Living",
     "publisher": "Resident Magazine",
     "thumbnail": "/images/press/press37.avif",
-    "link": "https://resident.com/real-estate/2025/12/30/cold-plunge-pools-are-the-new-deal-breaker-in-luxury-condo-living-2"
+    "link": "https://resident.com/real-estate/2025/12/30/cold-plunge-pools-are-the-new-deal-breaker-in-luxury-condo-living-2",
+    "category": "Lifestyle"
+  },
+  {
+    "id": 38,
+    "title": "Kolter Expands Development Site for Luxe Miami Beach Condo",
+    "publisher": "Commercial Observer",
+    "thumbnail": "/images/press/press38.webp",
+    "link": "https://commercialobserver.com/2026/01/miami-kolter-bh-residential-development-florida/",
+    "category": "Development"
+  },
+  {
+    "id": 39,
+    "title": "PALMA Miami Beach: Redefining Luxury In Miami's North Beach",
+    "publisher": "Haute Residence",
+    "thumbnail": "/images/press/press39.jpg",
+    "link": "https://www.hauteresidence.com/palma-miami-beach-redefining-luxury-in-miamis-north-beach/",
+    "category": "Feature"
+  },
+  {
+    "id": 40,
+    "title": "EXPERIENCE ELEVATED LIVING: PALMA Miami Beach Residences",
+    "publisher": "Luxury Guide USA",
+    "thumbnail": "/images/press/press17.jpg",
+    "link": "https://luxuryguideusa.com/experience-elevated-living-palma-miami-beach-residences/",
+    "category": "Feature"
+  },
+  {
+    "id": 41,
+    "title": "Ezio's Grand Opening Party",
+    "publisher": "World Red Eye",
+    "thumbnail": "/images/press/press41.jpg",
+    "link": "https://worldredeye.com/2026/01/ezios-grand-opening-party/",
+    "category": "Events"
+  },
+  {
+    "id": 42,
+    "title": "Inside The Playbook, Leadership Strategy & The Future at 72 Carlyle Sales Gallery",
+    "publisher": "World Red Eye",
+    "thumbnail": "/images/press/press42.jpg",
+    "link": "https://www.hauteresidence.com/palma-miami-beach-redefining-luxury-in-miamis-north-beach/",
+    "category": "Events"
   }
 ]
