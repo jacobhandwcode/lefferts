@@ -15,13 +15,13 @@ const categories = [...new Set(press.map(article => article.category || 'Uncateg
     <!-- Category Filter -->
     <div class="press-filter-wrapper">
       <div class="press-filter">
-        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn active" data-category="all" data-i18n="press.all">All</button>
         {categories.map(category => (
           <button class="filter-btn" data-category={category}>{category}</button>
         ))}
       </div>
       <div class="press-count">
-        <span class="count-number">{press.length}</span> Articles
+        <span class="count-number">{press.length}</span> <span data-i18n="press.articles">Articles</span>
       </div>
     </div>
 
@@ -34,11 +34,11 @@ const categories = [...new Set(press.map(article => article.category || 'Uncateg
             <div class="featured-overlay"></div>
           </div>
           <div class="featured-content">
-            <span class="featured-tag">Latest</span>
+            <span class="featured-tag" data-i18n="press.latest">Latest</span>
             <span class="featured-category">{featured.category || 'News'}</span>
             <h2 class="featured-title">{featured.title}</h2>
             <p class="featured-publisher">{featured.publisher}</p>
-            <span class="featured-cta">Read Article →</span>
+            <span class="featured-cta" data-i18n="press.readArticleArrow">Read Article →</span>
           </div>
         </a>
       );
@@ -55,7 +55,7 @@ const categories = [...new Set(press.map(article => article.category || 'Uncateg
         >
           <div class="press-card-image" style={`background-image: url('${article.thumbnail}')`}>
             <div class="press-card-overlay">
-              <span class="press-card-cta">Read Article</span>
+              <span class="press-card-cta" data-i18n="press.readArticle">Read Article</span>
             </div>
           </div>
           <div class="press-card-content">
@@ -69,19 +69,19 @@ const categories = [...new Set(press.map(article => article.category || 'Uncateg
 
     <!-- Load More Button -->
     <button class="show-articles" id="loadMoreBtn">
-      <span>Load More Articles</span>
+      <span data-i18n="press.loadMore">Load More Articles</span>
     </button>
 
     <!-- No Results Message -->
     <div class="press-no-results" style="display: none;">
-      <p>No articles found in this category.</p>
-      <button class="filter-btn" data-category="all">View All Articles</button>
+      <p data-i18n="press.noResults">No articles found in this category.</p>
+      <button class="filter-btn" data-category="all" data-i18n="press.viewAll">View All Articles</button>
     </div>
   </section>
 
   <!-- Press Inquiries -->
   <div class="inquiries">
-    <p>Press Inquiries</p>
+    <p data-i18n="press.inquiries">Press Inquiries</p>
     <a href="mailto:press@lefferts.com">press@lefferts.com</a>
   </div>
 </Layout>

@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "portfolio": "Portfólio",
+    "press": "Imprensa",
+    "contact": "Contato",
+    "legal": "Legal"
+  },
+  "hero": {
+    "home": "Um Legado De Criação De Marcos Visionários"
+  },
+  "heading": {
+    "home": "Unindo Inovação E Excelência Em Cada Empreendimento."
+  },
+  "stats": {
+    "million": "Milhões",
+    "billion": "Bilhões",
+    "sqft": "PÉS QUADRADOS BRUTOS DE EMPREENDIMENTOS EMBLEMÁTICOS",
+    "years": "ANOS DE EXPERIÊNCIA",
+    "investments": "EM INVESTIMENTOS IMOBILIÁRIOS"
+  },
+  "textbox": {
+    "legacy_heading": "UM LEGADO DE CRIAÇÃO DE MARCOS VISIONÁRIOS.",
+    "legacy_content": "<p>Fundada na cidade de Nova York e com mais de vinte anos de experiência no setor imobiliário, a Lefferts se destaca como uma força incomparável no universo das empresas de desenvolvimento de propriedade privada. Movida por um compromisso inabalável com a excelência e a sustentabilidade, a Lefferts cria propriedades residenciais e comerciais extraordinárias que redesenham os limites da inovação, qualidade e vida inclusiva. Seu portfólio inclui edifícios de condomínios de luxo, empreendimentos dinâmicos de uso misto e espaços comerciais de alto padrão em Nova York e no sul da Flórida.</p><p>Por mais de duas décadas, a Lefferts tem estado na vanguarda do setor, co-desenvolvendo 3 milhões de pés quadrados de espaço de uso misto e investindo mais de US$ 1,5 bilhão em diversos projetos imobiliários. Na cidade de Nova York, colaborações visionárias com arquitetos renomados, incluindo Renzo Piano para o 565 Broome Street no SoHo, e projetos transformadores, como Astoria North em Queens, remodelaram paisagens urbanas e redefiniram horizontes. No sul da Flórida, investimentos no desenvolvimento de vários edifícios de condomínios de luxo catalisaram a revitalização do Corredor da Rua 71 e do Distrito NoBe de Miami Beach.</p>",
+    "spaces_heading": "ESPAÇOS TRANSFORMADORES PARA LUGARES VIBRANTES.",
+    "spaces_content": "<p>Na Lefferts, o mercado imobiliário vai além de tijolos e cimento; trata-se de criar ambientes extraordinários que inspirem, energizem e promovam um senso de pertencimento. A dedicação inabalável da empresa ao design impecável, à execução perfeita e à qualidade incomparável garante que cada empreendimento da Lefferts supere as expectativas.</p>",
+    "culture_heading": "NOSSA CULTURA.",
+    "culture_content": "<p>A Lefferts defende a ideia de que empreendimentos sustentáveis e orientados pelo design podem unir pessoas e fomentar comunidades mais fortes. Cultivamos laços duradouros e respeito mútuo nos lugares onde construímos por meio da filantropia e do engajamento com líderes e organizações locais. Nosso compromisso em estabelecer e nutrir relacionamentos de longo prazo é um valor fundamental e é a base da nossa capacidade de entregar projetos que beneficiem as pessoas e os lugares que chamam de lar.</p>",
+    "people_heading": "AS PESSOAS QUE IMPULSIONAM A LEFFERTS.",
+    "people_content": "<h4>Lefferts Hoje</h4><p>Em 2019, com base em décadas de experiência na cidade de Nova York, o fundador Mendy Chudaitov expandiu o alcance da Lefferts para o sul da Flórida, onde realizou investimentos substanciais na revitalização do Corredor da Rua 71 e do Distrito NoBe de Miami Beach.</p><p>Os projetos incluem o 72 Park, um condomínio de 22 andares concluído na primavera de 2025, que será a primeira torre de luxo nova em Miami Beach a permitir aluguéis de curta duração; o 72 Carlyle, um condomínio de luxo de 19 andares com início de obras previsto para 2027; o PALMA Miami Beach Residences, uma torre residencial e de uso misto de 14 andares; e o 880 71st Street, uma torre multifamiliar de 20 andares com comércio no térreo.</p><h4>Integração Vertical</h4><ul><li>Pesquisa e Desenvolvimento</li><li>Marketing e Relações Públicas</li><li>Aquisições</li><li>Ativos Comerciais</li><li>Design</li><li>Construção</li><li>Gestão de Ativos</li><li>Recursos Humanos</li><li>Tecnologia da Informação</li><li>Contabilidade e Finanças</li></ul>"
+  },
+  "contact": {
+    "heading": "Fale Conosco.",
+    "firstName": "Nome *",
+    "lastName": "Sobrenome *",
+    "email": "E-mail *",
+    "message": "Mensagem",
+    "submit": "Enviar",
+    "sending": "ENVIANDO...",
+    "securityCheck": "Por favor, complete a verificação de segurança.",
+    "successTitle": "Mensagem Enviada com Sucesso!",
+    "errorSending": "Houve um erro ao enviar sua mensagem. ",
+    "errorInternet": "Por favor, verifique sua conexão com a internet.",
+    "errorFormat": "Erro no formato de resposta do servidor.",
+    "errorConfig": "Problema de configuração do servidor.",
+    "errorRetry": "Por favor, tente novamente mais tarde."
+  },
+  "newsletter": {
+    "title": "Cadastre-se Para Receber Novidades Da Lefferts",
+    "namePlaceholder": "Nome",
+    "emailPlaceholder": "E-mail",
+    "submit": "Enviar",
+    "sending": "ENVIANDO...",
+    "successTitle": "Inscrição Realizada com Sucesso!",
+    "successMessage": "Você receberá atualizações sobre os últimos empreendimentos e novidades da Lefferts.",
+    "alreadySubscribed": "Este endereço de e-mail já está inscrito em nossa newsletter.",
+    "errorSubscribing": "Houve um erro ao se inscrever na newsletter. ",
+    "errorInternet": "Por favor, verifique sua conexão com a internet.",
+    "errorFormat": "Erro no formato de resposta do servidor.",
+    "errorConfig": "Problema de configuração do servidor.",
+    "errorRetry": "Por favor, tente novamente mais tarde."
+  },
+  "footer": {
+    "followLefferts": "Siga a Lefferts"
+  },
+  "press": {
+    "all": "Todos",
+    "articles": "Artigos",
+    "latest": "Recente",
+    "readArticle": "Ler Artigo",
+    "readArticleArrow": "Ler Artigo →",
+    "loadMore": "Carregar Mais Artigos",
+    "noResults": "Nenhum artigo encontrado nesta categoria.",
+    "viewAll": "Ver Todos os Artigos",
+    "inquiries": "Assessoria De Imprensa",
+    "openLink": "Abrir Link",
+    "readMore": "Leia Mais"
+  },
+  "property": {
+    "address": "Endereço",
+    "projectType": "Tipo de Projeto",
+    "design": "Design",
+    "website": "Site",
+    "contact": "Contato",
+    "salesGallery": "Galeria de Vendas",
+    "highlights": "Destaques",
+    "additionalProjects": "Projetos Adicionais",
+    "readMore": "Leia Mais",
+    "readLess": "Ler Menos"
+  },
+  "lang": {
+    "en": "EN",
+    "es": "ES",
+    "pt": "PT"
+  }
+}

@@ -1,11 +1,12 @@
 ---
 export interface Props {
   text: string;
+  i18nKey?: string;
 }
 
-const { text } = Astro.props;
+const { text, i18nKey } = Astro.props;
 ---
 
 <div id="site" class="heading-txt">
-  <h2>{text}</h2>
+  <h2 data-i18n={i18nKey}>{text}</h2>
 </div>

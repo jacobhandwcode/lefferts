@@ -204,6 +204,7 @@ const robotsContent = `${noindex ? 'noindex' : 'index'},${nofollow ? 'nofollow' 
     <Footer showNewsletter={isHome} />
 
     <script>
+      import '../scripts/i18n.js';
       import '../scripts/main.js';
 
       document.addEventListener('astro:before-preparation', (e) => {

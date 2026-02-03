@@ -5,21 +5,27 @@ const stats = [
     suffix: "Million",
     prefix: "+",
     description: "GROSS SQUARE FEET OF DESTINATION DEVELOPMENTS",
-    className: "mil"
+    className: "mil",
+    i18nSuffix: "stats.million",
+    i18nDesc: "stats.sqft"
   },
   {
     number: "25",
     suffix: "",
     prefix: "",
     description: "YEARS OF EXPERIENCE",
-    className: ""
+    className: "",
+    i18nSuffix: "",
+    i18nDesc: "stats.years"
   },
   {
     number: "1.5",
     suffix: "Billion",
     prefix: "",
     description: "IN REAL ESTATE INVESTMENTS",
-    className: "bil"
+    className: "bil",
+    i18nSuffix: "stats.billion",
+    i18nDesc: "stats.investments"
   }
 ];
 ---
@@ -30,7 +36,7 @@ const stats = [
       <h3 class={stat.className} data-countup-number={stat.number}>
         {stat.number}
       </h3>
-      <p>{stat.description}</p>
+      <p data-i18n={stat.i18nDesc}>{stat.description}</p>
     </div>
   ))}
 </div>
