@@ -2,12 +2,14 @@
 export interface Props {
   heading: string;
   content: string;
+  i18nHeadingKey?: string;
+  i18nContentKey?: string;
 }
 
-const { heading, content } = Astro.props;
+const { heading, content, i18nHeadingKey, i18nContentKey } = Astro.props;
 ---
 
 <div class="textbox">
-  <h3>{heading}</h3>
-  <div class="textbox-content" set:html={content} />
+  <h3 data-i18n={i18nHeadingKey}>{heading}</h3>
+  <div class="textbox-content" set:html={content} data-i18n-html={i18nContentKey} />
 </div>

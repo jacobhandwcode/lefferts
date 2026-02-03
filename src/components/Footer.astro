@@ -22,11 +22,11 @@ const { showNewsletter = true } = Astro.props;
   {
     showNewsletter && (
       <div class="middle newsletter-container">
-        <p class="newsletter-title">Register For Lefferts news Updates</p>
+        <p class="newsletter-title" data-i18n="newsletter.title">Register For Lefferts news Updates</p>
         <form class="newsletter-form" method="post" action="#">
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <button class="newsletter-submit" type="submit">
+          <input type="text" name="name" placeholder="Name" data-i18n-placeholder="newsletter.namePlaceholder" required />
+          <input type="email" name="email" placeholder="Email" data-i18n-placeholder="newsletter.emailPlaceholder" required />
+          <button class="newsletter-submit" type="submit" data-i18n="newsletter.submit">
             Submit
           </button>
         </form>
@@ -44,7 +44,7 @@ const { showNewsletter = true } = Astro.props;
           /></a
         >
         <p style="font-size: 13px;">© 2026</p>
-        <p style="font-size: 13px;">Follow Lefferts</p>
+        <p style="font-size: 13px;" data-i18n="footer.followLefferts">Follow Lefferts</p>
         <div class="socials">
           <div class="icons">
             <a
@@ -82,11 +82,11 @@ const { showNewsletter = true } = Astro.props;
       </div>
       <div class="footer-nav">
         <ul>
-          <a href="/">About</a>
-          <a href="/portfolio">Portfolio</a>
-          <a href="/press">Press</a>
-          <a href="/contact">Contact</a>
-          <a href="/legal">Legal</a>
+          <a href="/" data-i18n="nav.about">About</a>
+          <a href="/portfolio" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="/press" data-i18n="nav.press">Press</a>
+          <a href="/contact" data-i18n="nav.contact">Contact</a>
+          <a href="/legal" data-i18n="nav.legal">Legal</a>
         </ul>
       </div>
     </div>
@@ -113,7 +113,9 @@ const { showNewsletter = true } = Astro.props;
     const submitButton = this.querySelector('.newsletter-submit');
     const originalText = submitButton.textContent;
 
-    submitButton.textContent = 'SENDING...';
+    const t = (key) => window.__i18n ? window.__i18n.getTranslation(window.__i18n.getSavedLang(), key) : null;
+
+    submitButton.textContent = t('newsletter.sending') || 'SENDING...';
     submitButton.disabled = true;
     submitButton.style.opacity = '0.7';
 
@@ -146,17 +148,19 @@ const { showNewsletter = true } = Astro.props;
 
       if (response.ok && result.success) {
         const container = document.querySelector('.newsletter-container');
+        const successTitle = t('newsletter.successTitle') || 'Successfully Subscribed!';
+        const successMsg = t('newsletter.successMessage') || "You'll receive updates about Lefferts' latest developments and news.";
         container.innerHTML = `
           <div class="newsletter-success" style="text-align: center;">
-            <h3>Successfully Subscribed!</h3>
-            <p>You'll receive updates about Lefferts' latest developments and news.</p>
+            <h3>${successTitle}</h3>
+            <p>${successMsg}</p>
           </div>
         `;
       } else {
         const errorMessage = result.error || 'Unknown error occurred';
 
         if (errorMessage.includes('already subscribed')) {
-          alert('This email address is already subscribed to our newsletter.');
+          alert(t('newsletter.alreadySubscribed') || 'This email address is already subscribed to our newsletter.');
         } else {
           alert('Error: ' + errorMessage);
         }
@@ -168,16 +172,16 @@ const { showNewsletter = true } = Astro.props;
     } catch (error) {
       console.error('Newsletter fetch error:', error);
 
-      let errorMessage = 'There was an error subscribing to the newsletter. ';
+      let errorMessage = t('newsletter.errorSubscribing') || 'There was an error subscribing to the newsletter. ';
 
       if (error.name === 'TypeError' && error.message.includes('fetch')) {
-        errorMessage += 'Please check your internet connection.';
+        errorMessage += t('newsletter.errorInternet') || 'Please check your internet connection.';
       } else if (error.message.includes('JSON')) {
-        errorMessage += 'Server response format error.';
+        errorMessage += t('newsletter.errorFormat') || 'Server response format error.';
       } else if (error.message.includes('non-JSON')) {
-        errorMessage += 'Server configuration issue.';
+        errorMessage += t('newsletter.errorConfig') || 'Server configuration issue.';
       } else {
-        errorMessage += 'Please try again later.';
+        errorMessage += t('newsletter.errorRetry') || 'Please try again later.';
       }
 
       alert(errorMessage);

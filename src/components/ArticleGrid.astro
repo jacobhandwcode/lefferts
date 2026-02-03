@@ -28,7 +28,7 @@ const { articles } = Astro.props;
             <div class="content-details fadeIn-left">
               <p>{article.publisher}</p>
               <h3>{article.title}</h3>
-              <div class="open-link">Open Link</div>
+              <div class="open-link" data-i18n="press.openLink">Open Link</div>
             </div>
           </div>
         </a>
@@ -38,7 +38,7 @@ const { articles } = Astro.props;
           <div class="content">
             <p>{article.publisher}</p>
             <h3>{article.title}</h3>
-            <a target="_blank" href={article.link} class="read-more">Read More</a>
+            <a target="_blank" href={article.link} class="read-more" data-i18n="press.readMore">Read More</a>
           </div>
           <img class="article-mobile-image" src={article.thumbnail} alt={article.title} />
         </div>
@@ -48,4 +48,4 @@ const { articles } = Astro.props;
 </div>
 
 <!-- Load more button -->
-<button class="show-articles">Load More Articles</button>
+<button class="show-articles" data-i18n="press.loadMore">Load More Articles</button>

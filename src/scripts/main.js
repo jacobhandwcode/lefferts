@@ -144,7 +144,8 @@ function initReadMore() {
             p.style.opacity = '1';
           }, 10);
         });
-        readMoreBtn.textContent = 'Read Less';
+        const t = (key) => window.__i18n ? window.__i18n.getTranslation(window.__i18n.getSavedLang(), key) : null;
+        readMoreBtn.textContent = t('property.readLess') || 'Read Less';
       } else {
         hiddenParagraphs.forEach((p) => {
           p.style.opacity = '0';
@@ -152,7 +153,8 @@ function initReadMore() {
             p.style.display = 'none';
           }, 300);
         });
-        readMoreBtn.textContent = 'Read More';
+        const t = (key) => window.__i18n ? window.__i18n.getTranslation(window.__i18n.getSavedLang(), key) : null;
+        readMoreBtn.textContent = t('property.readMore') || 'Read More';
       }
     });
   }

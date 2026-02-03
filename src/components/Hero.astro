@@ -2,19 +2,20 @@
 export interface Props {
   text: string;
   videoSrc?: string;
+  i18nKey?: string;
 }
 
-const { text, videoSrc } = Astro.props;
+const { text, videoSrc, i18nKey } = Astro.props;
 ---
 
 <div class="hero-section">
   <div class="hero-vid">
     {videoSrc && (
-      <video 
-        playsinline 
-        autoplay 
-        muted 
-        loop 
+      <video
+        playsinline
+        autoplay
+        muted
+        loop
         preload="metadata"
         webkit-playsinline="true"
         data-hero-video="true"
@@ -27,7 +28,7 @@ const { text, videoSrc } = Astro.props;
     <div class="hero-fallback" style="position: absolute; inset: 0; background: #fff; z-index: -1;"></div>
   </div>
   <div class="hero-content" style="opacity: 0; transition: opacity 0.5s ease 0.2s;">
-    <h1>{text}</h1>
+    <h1 data-i18n={i18nKey}>{text}</h1>
   </div>
   <div class="arrow" style="opacity: 0; transition: opacity 0.5s ease 0.4s;">
     <a href="#site" class="down-arrow" aria-label="Scroll down"></a>
@@ -39,37 +40,37 @@ const { text, videoSrc } = Astro.props;
     const heroVideo = document.querySelector('[data-hero-video]') as HTMLVideoElement;
     const heroContent = document.querySelector('.hero-content') as HTMLElement;
     const heroArrow = document.querySelector('.arrow') as HTMLElement;
-    
+
     if (heroVideo) {
       heroVideo.muted = true;
       heroVideo.playsInline = true;
       heroVideo.autoplay = true;
       heroVideo.loop = true;
-      
+
       heroVideo.setAttribute('webkit-playsinline', 'true');
       heroVideo.setAttribute('playsinline', 'true');
-      
+
       let videoStarted = false;
-      
+
       const showVideo = () => {
         if (!videoStarted) {
           heroVideo.style.opacity = '1';
           videoStarted = true;
-          
+
           setTimeout(() => {
             if (heroContent) heroContent.style.opacity = '1';
           }, 200);
-          
+
           setTimeout(() => {
             if (heroArrow) heroArrow.style.opacity = '1';
           }, 400);
         }
       };
-      
+
       const startVideo = () => {
         heroVideo.currentTime = 0;
         const playPromise = heroVideo.play();
-        
+
         if (playPromise !== undefined) {
           playPromise
             .then(() => {
@@ -77,7 +78,7 @@ const { text, videoSrc } = Astro.props;
             })
             .catch(error => {
               showVideo();
-              
+
               const playOnTouch = () => {
                 heroVideo.play()
                   .then(() => {
@@ -85,13 +86,13 @@ const { text, videoSrc } = Astro.props;
                   })
                   .catch(() => {});
               };
-              
+
               document.addEventListener('click', playOnTouch, { once: true });
               document.addEventListener('touchstart', playOnTouch, { once: true });
             });
         }
       };
-      
+
       if (heroVideo.readyState >= 2) {
         startVideo();
       } else {
@@ -99,19 +100,19 @@ const { text, videoSrc } = Astro.props;
         heroVideo.addEventListener('canplaythrough', () => {
           if (!videoStarted) startVideo();
         }, { once: true });
-        
+
         setTimeout(() => {
           if (!videoStarted) {
             showVideo();
           }
         }, 2000);
       }
-      
+
       heroVideo.addEventListener('error', (e) => {
         console.error('Hero video error:', e);
         showVideo();
       });
-      
+
       heroVideo.addEventListener('ended', () => {
         heroVideo.currentTime = 0;
         heroVideo.play().catch(() => {});
@@ -121,13 +122,13 @@ const { text, videoSrc } = Astro.props;
       if (heroArrow) heroArrow.style.opacity = '1';
     }
   }
-  
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initializeHeroVideoComponent);
   } else {
     initializeHeroVideoComponent();
   }
-  
+
   document.addEventListener('astro:after-swap', () => {
     setTimeout(initializeHeroVideoComponent, 50);
   });

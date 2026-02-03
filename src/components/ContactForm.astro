@@ -1,22 +1,22 @@
 <div class="form-div-wrapper contact-container">
   <form class="contact-form" method="post" action="#">
     <div class="form-group">
-      <label for="firstName">First Name *</label>
+      <label for="firstName" data-i18n="contact.firstName">First Name *</label>
       <input type="text" id="firstName" name="firstName" required />
     </div>
 
     <div class="form-group">
-      <label for="lastName">Last Name *</label>
+      <label for="lastName" data-i18n="contact.lastName">Last Name *</label>
       <input type="text" id="lastName" name="lastName" required />
     </div>
 
     <div class="form-group full-width">
-      <label for="email">Email *</label>
+      <label for="email" data-i18n="contact.email">Email *</label>
       <input type="email" id="email" name="email" required />
     </div>
 
     <div class="form-group full-width">
-      <label for="message">Message</label>
+      <label for="message" data-i18n="contact.message">Message</label>
       <textarea id="message" name="message" rows="4"></textarea>
     </div>
 
@@ -25,7 +25,7 @@
     </div>
 
     <div class="form-group full-width">
-      <button class="contact-submit" type="submit">Submit</button>
+      <button class="contact-submit" type="submit" data-i18n="contact.submit">Submit</button>
     </div>
   </form>
 </div>
@@ -53,7 +53,9 @@
     const submitButton = this.querySelector('.contact-submit');
     const originalText = submitButton.textContent;
 
-    submitButton.textContent = 'SENDING...';
+    const t = (key) => window.__i18n ? window.__i18n.getTranslation(window.__i18n.getSavedLang(), key) : null;
+
+    submitButton.textContent = t('contact.sending') || 'SENDING...';
     submitButton.disabled = true;
     submitButton.style.opacity = '0.7';
 
@@ -64,7 +66,7 @@
     )?.value;
 
     if (!turnstileResponse) {
-      alert('Please complete the security verification.');
+      alert(t('contact.securityCheck') || 'Please complete the security verification.');
       submitButton.textContent = originalText;
       submitButton.disabled = false;
       submitButton.style.opacity = '1';
@@ -102,9 +104,10 @@
 
       if (response.ok && result.success) {
         const container = document.querySelector('.contact-container');
+        const successTitle = t('contact.successTitle') || 'Message Sent Successfully!';
         container.innerHTML = `
           <div class="success-message" style="text-align: center;">
-            <h3>Message Sent Successfully!</h3>
+            <h3>${successTitle}</h3>
             <p>${result.message}</p>
           </div>
         `;
@@ -122,16 +125,16 @@
         submitButton.style.opacity = '1';
       }
     } catch (error) {
-      let errorMessage = 'There was an error sending your message. ';
+      let errorMessage = t('contact.errorSending') || 'There was an error sending your message. ';
 
       if (error.name === 'TypeError' && error.message.includes('fetch')) {
-        errorMessage += 'Please check your internet connection.';
+        errorMessage += t('contact.errorInternet') || 'Please check your internet connection.';
       } else if (error.message.includes('JSON')) {
-        errorMessage += 'Server response format error.';
+        errorMessage += t('contact.errorFormat') || 'Server response format error.';
       } else if (error.message.includes('non-JSON')) {
-        errorMessage += 'Server configuration issue.';
+        errorMessage += t('contact.errorConfig') || 'Server configuration issue.';
       } else {
-        errorMessage += 'Please try again later.';
+        errorMessage += t('contact.errorRetry') || 'Please try again later.';
       }
 
       alert(errorMessage);
